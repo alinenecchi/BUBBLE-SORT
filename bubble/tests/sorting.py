@@ -1,5 +1,19 @@
 import timeit
 
+def shortBubbleSort(lista):
+    start_time = timeit.default_timer()
+    swap = True
+    n = len(lista)-1
+    while n > 0 and swap:
+       swap = False
+       for i in range(n):
+            if lista[i] > lista[i+1]:
+                swap = True
+                lista[i], lista[i+1] = lista[i+1], lista[i]
+            n -= 1
+    final_time = timeit.default_timer() - start_time
+    return final_time
+
 def bubble_sort(lista):
     start_time = timeit.default_timer()
     n = len(lista)

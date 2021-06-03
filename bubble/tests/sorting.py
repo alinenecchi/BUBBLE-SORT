@@ -1,6 +1,6 @@
 import timeit
 
-def shortBubbleSort(lista):
+def shortbubble_sort(lista):
     start_time = timeit.default_timer()
     swap = True
     n = len(lista)-1

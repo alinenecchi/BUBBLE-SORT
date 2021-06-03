@@ -114,7 +114,7 @@ data = {
 }
 df = pd.DataFrame(data)
 
-with pd.ExcelWriter('Sort/compare.xlsx', mode='a') as file:
+with pd.ExcelWriter('tests/compare.xlsx', mode='a') as file:
     df.to_excel(file, sheet_name='compare_sort')
 
 print('Operações realizadas com sucesso!!')
